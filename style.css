@@ -1,0 +1,148 @@
+html, body {
+    
+    background: url(Mount.png) no-repeat fixed;
+    background-size: 100% auto;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+#out {
+   
+    background: url(Mount.png) no-repeat;
+    opacity: 0.5;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+    height: 160px;
+    text-align: justify;
+}
+
+
+#forecast{
+    top: -80px;
+    position: relative;
+    right: auto;
+}
+#forecast1{
+    top: -60px;
+    position: relative;
+}
+
+#image {
+    left: 5px;
+top: -10px;
+position: relative;
+text-align: right;
+font-size: large;
+}
+
+
+
+#body_button {
+    width: 150px;
+    margin: 40px auto;
+    background: url(Mount.png) no-repeat fixed;
+    opacity: 0.5;
+    border-radius: 10%;
+    padding: 10px;
+    min-height: 80px;
+
+    
+}
+.button_cool,
+.button_cool::before,
+.button_cool::after,
+.button_cool span,
+.button_cool span::before,
+.button_cool span::after
+{
+  transition: all ease 0.5s;
+}
+ 
+.button_cool{
+    position: relative;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 1em;
+    border: solid 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+ 
+.button_cool:hover
+{
+    box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+}
+ 
+.button_cool span
+{
+    display: inline-block;
+
+    padding: 0.2em 1em;
+}
+ 
+.button_cool:hover span
+{
+    background-color: white;
+    color: #112;
+}
+ 
+.button_cool::before,
+.button_cool::after,
+.button_cool span::before,
+.button_cool span::after
+{
+    content: '';
+    position: absolute;
+    border: 1px;
+}
+ 
+.button_cool::before,
+.button_cool span::before
+{
+    border-style: solid none;  
+}
+ 
+.button_cool::before,
+.button_cool span::after{      
+    left: 0;
+    top: -0.4em;
+    width: 100%; 
+    height: calc(100% + 0.8em);
+}
+ 
+.button_cool::after,
+.button_cool span::after
+{
+    border-style: none solid;   
+}
+ 
+.button_cool::after,
+.button_cool span::before
+{
+    top: 0;
+    left: -0.4em;
+    height: 100%;
+    width: calc(100% + 0.8em); 
+}
+ 
+.button_cool:hover::after,
+.button_cool:hover span::after
+{
+    transform: scaleY(0);
+}
+ 
+.button_cool:hover::before,
+.button_cool:hover span::before
+{
+    transform: scaleX(0);
+}
+ 
+.button_cool:hover span::after,
+.button_cool:hover span::before
+{
+    opacity: 0;
+}
